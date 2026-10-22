@@ -1,0 +1,50 @@
+# PGxAI Andromeda
+
+> PGxAI Andromeda is an educational reference service. It looks up what published drug labeling and other sources say about drug-drug interactions, gene-drug (pharmacogenomic) associations and drug-disease questions, with links to the original sources. It is a remote MCP server (streamable HTTP). No account, sign-in or API key is needed. It is not medical advice.
+
+## Connect to the MCP server
+
+Pick one endpoint. All three expose the same two read-only tools; they differ only in the optional result card.
+
+- [Plain endpoint](https://app.pgx.ai/mcp/text): tools only, no card. Best for coding agents and command-line clients.
+- [MCP Apps endpoint](https://app.pgx.ai/mcp/app): tools plus an interactive card in the standard MCP Apps format, for hosts that render MCP Apps (for example Claude).
+- [ChatGPT endpoint](https://app.pgx.ai/mcp/widget): tools plus the card for ChatGPT apps.
+
+## Add it to a client
+
+These are commands for the user to run or approve.
+
+- Claude Code: `claude mcp add --transport http pgxai-andromeda https://app.pgx.ai/mcp/text`
+- Claude Code plugin (also adds a skill that explains how to use the tools): `/plugin marketplace add PGxAI-Inc/pgxai-andromeda-plugin-mcp-prod`, then `/plugin install pgxai-andromeda@pgxai`
+- Codex CLI: `codex mcp add pgxai-andromeda --url https://app.pgx.ai/mcp/text`
+- Gemini CLI: `gemini mcp add -s user --transport http pgxai-andromeda https://app.pgx.ai/mcp/text`
+- Cursor: add to `~/.cursor/mcp.json` (or `.cursor/mcp.json` in a project): `{"mcpServers": {"pgxai-andromeda": {"url": "https://app.pgx.ai/mcp/text"}}}`
+- VS Code: command palette, "MCP: Add Server", choose "HTTP", enter `https://app.pgx.ai/mcp/text`
+- Antigravity: `agy plugin install https://github.com/PGxAI-Inc/pgxai-andromeda-plugin-mcp-prod`
+- Any other MCP client: add a remote (streamable HTTP) server with one of the URLs above.
+- ChatGPT and Claude (web and desktop apps): these only accept connectors that the user adds in the app settings (Settings, Connectors, add a custom connector, paste the URL). An agent cannot do this for the user, so give the user these steps.
+
+## Tools
+
+- `review_medication_evidence`: published drug-drug, gene-drug and drug-disease information for the drugs, genes and diseases named, with excerpts and source links.
+- `get_condition_category`: maps a disease or population term to the exact name `review_medication_evidence` accepts. Call it before submitting a disease term.
+
+## Using the tools
+
+- Send only drug, gene and disease names. Do not send personal information such as names, contact details or dates of birth.
+- Report the returned findings and their source links separately from your own explanation. Keep the source's qualifications. Do not turn a finding into dosing or treatment advice.
+
+## Example prompts
+
+- What do published sources say about metoprolol and CYP2D6 ultrarapid metabolism? Include the source link.
+- For a pharmacology lesson, check fexofenadine and hepatic impairment. Explain the result with a source link.
+- What do published drug labels say about the interaction between fexofenadine and erythromycin? Include the source link.
+
+## Links
+
+- [Plugin package for Claude Code, Cursor, Antigravity, Grok Build and others](https://github.com/PGxAI-Inc/pgxai-andromeda-plugin-mcp-prod)
+- [MCP server card](https://app.pgx.ai/.well-known/mcp/server-card.json)
+- [Product page](https://pgx.ai/andromeda)
+- [Privacy policy](https://pgx.ai/andromeda/privacy)
+- [Terms of service](https://pgx.ai/andromeda/terms)
+- [Support](https://pgx.ai/support-help)

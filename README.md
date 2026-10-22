@@ -2,6 +2,13 @@
 
 Drug interaction reference. PGxAI Andromeda is an educational reference tool for exploring published drug-drug interactions, gene-drug associations, and drug-disease interactions.
 
+## Tell your agent
+
+> Connect the MCP server at https://app.pgx.ai/mcp/text and read https://app.pgx.ai/llms.txt for the details.
+
+That is enough for most agents: [`llms.txt`](llms.txt) in this repository (also served at https://app.pgx.ai/llms.txt) lists the endpoints and the exact install
+command for each client.
+
 This repository is the plugin package for **PGxAI Andromeda**: it connects your agent to the PGxAI Andromeda MCP server.
 It contains configuration and metadata only. The reference data and the lookup logic run on the PGxAI service.
 
