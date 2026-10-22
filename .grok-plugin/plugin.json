@@ -1,0 +1,22 @@
+{
+  "name": "pgxai-andromeda",
+  "version": "1.1.0",
+  "description": "PGxAI Andromeda is an educational reference tool for exploring published drug-drug interactions, gene-drug associations, and drug-disease interactions.",
+  "author": {
+    "name": "PGxAI Inc.",
+    "url": "https://pgx.ai"
+  },
+  "homepage": "https://pgx.ai/andromeda",
+  "repository": "https://github.com/PGxAI-Inc/pgxai-andromeda-plugin-mcp-prod",
+  "license": "MIT",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "keywords": [
+    "pharmacogenetics",
+    "pharmacogenomics",
+    "drug-interactions",
+    "pgxai",
+    "pgxai andromeda",
+    "drug interaction reference"
+  ]
+}

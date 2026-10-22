@@ -1,0 +1,27 @@
+{
+  "name": "pgxai-andromeda",
+  "displayName": "PGxAI Andromeda",
+  "version": "1.1.0",
+  "description": "PGxAI Andromeda is an educational reference tool for exploring published drug-drug interactions, gene-drug associations, and drug-disease interactions.",
+  "logo": "assets/logo.png",
+  "suggestedPrompts": [
+    "What do published sources say about metoprolol and CYP2D6 ultrarapid metabolism? Include the source link.",
+    "For a pharmacology lesson, check fexofenadine and hepatic impairment. Explain the result with a source link.",
+    "What do published drug labels say about the interaction between fexofenadine and erythromycin? Include the source link."
+  ],
+  "keywords": [
+    "pharmacogenetics",
+    "pharmacogenomics",
+    "drug-interactions",
+    "pgxai",
+    "pgxai andromeda",
+    "drug interaction reference"
+  ],
+  "author": {
+    "name": "PGxAI Inc.",
+    "url": "https://pgx.ai"
+  },
+  "homepage": "https://pgx.ai/andromeda",
+  "repository": "https://github.com/PGxAI-Inc/pgxai-andromeda-plugin-mcp-prod",
+  "license": "MIT"
+}

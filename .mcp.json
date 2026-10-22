@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "pgxai-andromeda": {
+      "type": "http",
+      "url": "https://app.pgx.ai/mcp/text"
+    }
+  }
+}
