@@ -15,12 +15,12 @@ Pick one endpoint. All three expose the same two read-only tools; they differ on
 These are commands for the user to run or approve.
 
 - Claude Code: `claude mcp add --transport http pgxai-andromeda https://app.pgx.ai/mcp/text`
-- Claude Code plugin (also adds a skill that explains how to use the tools): `/plugin marketplace add PGxAI-Inc/pgxai-andromeda-plugin-mcp-prod`, then `/plugin install pgxai-andromeda@pgxai`
+- Claude Code plugin (also adds a skill that explains how to use the tools): `/plugin marketplace add PGxAI-Inc/pgxai-mcp-andromeda-plugin-prod`, then `/plugin install pgxai-andromeda@pgxai`
 - Codex CLI: `codex mcp add pgxai-andromeda --url https://app.pgx.ai/mcp/text`
 - Gemini CLI: `gemini mcp add -s user --transport http pgxai-andromeda https://app.pgx.ai/mcp/text`
 - Cursor: add to `~/.cursor/mcp.json` (or `.cursor/mcp.json` in a project): `{"mcpServers": {"pgxai-andromeda": {"url": "https://app.pgx.ai/mcp/text"}}}`
 - VS Code: command palette, "MCP: Add Server", choose "HTTP", enter `https://app.pgx.ai/mcp/text`
-- Antigravity: `agy plugin install https://github.com/PGxAI-Inc/pgxai-andromeda-plugin-mcp-prod`
+- Antigravity: `agy plugin install https://github.com/PGxAI-Inc/pgxai-mcp-andromeda-plugin-prod`
 - Any other MCP client: add a remote (streamable HTTP) server with one of the URLs above.
 - ChatGPT and Claude (web and desktop apps): these only accept connectors that the user adds in the app settings (Settings, Connectors, add a custom connector, paste the URL). An agent cannot do this for the user, so give the user these steps.
 
@@ -42,8 +42,8 @@ These are commands for the user to run or approve.
 
 ## Links
 
-- [Plugin package for Claude Code, Cursor, Antigravity, Grok Build and others](https://github.com/PGxAI-Inc/pgxai-andromeda-plugin-mcp-prod)
-- [MCP server card](https://app.pgx.ai/.well-known/mcp/server-card.json)
+- [Plugin package for Claude Code, Cursor, Antigravity, Grok Build and others](https://github.com/PGxAI-Inc/pgxai-mcp-andromeda-plugin-prod)
+- [MCP server card](https://app.pgx.ai/mcp/.well-known/mcp/server-card.json)
 - [Product page](https://pgx.ai/andromeda)
 - [Privacy policy](https://pgx.ai/andromeda/privacy)
 - [Terms of service](https://pgx.ai/andromeda/terms)

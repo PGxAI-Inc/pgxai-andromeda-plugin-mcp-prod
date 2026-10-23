@@ -1,12 +1,14 @@
 # PGxAI Andromeda
 
+[![PGxAI Andromeda MCP connector - tool definition quality and endpoint health on Glama](https://glama.ai/mcp/connectors/ai.pgx.app/pgx-ai-andromeda/badges/score.svg)](https://glama.ai/mcp/connectors/ai.pgx.app/pgx-ai-andromeda)
+
 Drug interaction reference. PGxAI Andromeda is an educational reference tool for exploring published drug-drug interactions, gene-drug associations, and drug-disease interactions.
 
 ## Tell your agent
 
-> Connect the MCP server at https://app.pgx.ai/mcp/text and read https://app.pgx.ai/llms.txt for the details.
+> Connect the MCP server at https://app.pgx.ai/mcp/text and read https://app.pgx.ai/mcp/llms.txt for the details.
 
-That is enough for most agents: [`llms.txt`](llms.txt) in this repository (also served at https://app.pgx.ai/llms.txt) lists the endpoints and the exact install
+That is enough for most agents: [`llms.txt`](llms.txt) in this repository (also served at https://app.pgx.ai/mcp/llms.txt) lists the endpoints and the exact install
 command for each client.
 
 This repository is the plugin package for **PGxAI Andromeda**: it connects your agent to the PGxAI Andromeda MCP server.
@@ -35,10 +37,10 @@ The server is `https://app.pgx.ai/mcp/text` (streamable HTTP, no account or sign
 
 | Platform | File | How |
 |---|---|---|
-| Claude Code | `.claude-plugin/`, `.mcp.json` | `/plugin marketplace add PGxAI-Inc/pgxai-andromeda-plugin-mcp-prod`, then `/plugin install pgxai-andromeda@pgxai` |
+| Claude Code | `.claude-plugin/`, `.mcp.json` | `/plugin marketplace add PGxAI-Inc/pgxai-mcp-andromeda-plugin-prod`, then `/plugin install pgxai-andromeda@pgxai` |
 | Cursor | `.cursor-plugin/plugin.json`, `mcp.json` | Add the plugin from this repository (see the Cursor plugin documentation). |
 | xAI Grok | `.grok-plugin/plugin.json`, `.mcp.json` | Install from the xAI plugin marketplace once listed, or add this repository. |
-| Antigravity | `.antigravity-plugin/plugin.json`, `plugin.json`, `mcp_config.json` | `agy plugin install https://github.com/PGxAI-Inc/pgxai-andromeda-plugin-mcp-prod` |
+| Antigravity | `.antigravity-plugin/plugin.json`, `plugin.json`, `mcp_config.json` | `agy plugin install https://github.com/PGxAI-Inc/pgxai-mcp-andromeda-plugin-prod` |
 | Any MCP client | - | Add the URL above as a remote (streamable HTTP) server. |
 
 ## Network and data

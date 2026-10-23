@@ -7,7 +7,7 @@
     "name": "PGxAI Inc."
   },
   "homepage": "https://pgx.ai/andromeda",
-  "repository": "https://github.com/PGxAI-Inc/pgxai-andromeda-plugin-mcp-prod",
+  "repository": "https://github.com/PGxAI-Inc/pgxai-mcp-andromeda-plugin-prod",
   "license": "MIT",
   "keywords": [
     "pharmacogenetics",

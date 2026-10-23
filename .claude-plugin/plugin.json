@@ -8,7 +8,7 @@
     "url": "https://pgx.ai"
   },
   "homepage": "https://pgx.ai/andromeda",
-  "repository": "https://github.com/PGxAI-Inc/pgxai-andromeda-plugin-mcp-prod",
+  "repository": "https://github.com/PGxAI-Inc/pgxai-mcp-andromeda-plugin-prod",
   "license": "MIT",
   "keywords": [
     "pharmacogenetics",
@@ -19,7 +19,7 @@
     "drug interaction reference"
   ],
   "icon": "./assets/logo.png",
-  "documentationUrl": "https://github.com/PGxAI-Inc/pgxai-andromeda-plugin-mcp-prod",
+  "documentationUrl": "https://github.com/PGxAI-Inc/pgxai-mcp-andromeda-plugin-prod",
   "supportUrl": "https://pgx.ai/support-help",
   "privacyPolicyUrl": "https://pgx.ai/andromeda/privacy",
   "termsOfServiceUrl": "https://pgx.ai/andromeda/terms"
